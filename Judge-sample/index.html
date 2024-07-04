@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断メーカー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>診断メーカー</h1>
+            <form id="diagnosis-form">
+                <div class="question">
+                    <label for="question1">質問1: あなたは朝型ですか？夜型ですか？</label>
+                    <select id="question1">
+                        <option value="morning">朝型</option>
+                        <option value="night">夜型</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question2">質問2: あなたは外向的ですか？内向的ですか？</label>
+                    <select id="question2">
+                        <option value="extrovert">外向的</option>
+                        <option value="introvert">内向的</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question3">質問3: あなたは計画的ですか？即興的ですか？</label>
+                    <select id="question3">
+                        <option value="planner">計画的</option>
+                        <option value="spontaneous">即興的</option>
+                    </select>
+                </div>
+                <button type="button" onclick="showResult()">診断する</button>
+            </form>
+        </div>
+        <div id="result-container" class="result-container">
+            <h1>診断結果</h1>
+            <div id="result" class="result"></div>
+            <button type="button" onclick="goBack()">戻る</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

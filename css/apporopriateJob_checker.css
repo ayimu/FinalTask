@@ -12,13 +12,15 @@ nav.floating {
   body {
     font-family: 'Kaisei Opti', serif;
     background-image: url(../images/common/yukari_yuyushiki.png);
-    background-size:auto;
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position: center center;
     margin: 0;
-    padding: 0;
+    padding-bottom: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height:fit-content;
     position: relative;
   }
   
@@ -49,8 +51,9 @@ nav.floating {
   /*診断メーカーの枠*/
   .container {
     background-color: #000000;
-    padding: 30px;
     width: 350px;
+    margin-top: 200px;
+    padding:30px;
     text-align: center;
   }
   
@@ -113,7 +116,7 @@ nav.floating {
   /*診断結果(あなたは***です！)*/
   .result {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 36px;
     font-weight: bold;
     color: hsl(0, 0%, 100%);
   }

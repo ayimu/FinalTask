@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>診断メーカー</title>
+    <script src="js/judgeScript.js"></script>
+    <link href="css/judgeStyle.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>中二病適正診断</h1>
+            <form id="diagnosis-form">
+                <div class="question">
+                    <label for="question1">質問1: 朝型ですか？夜型ですか？</label>
+                    <select id="question1">
+                        <option value="morning">朝型</option>
+                        <option value="night">夜型</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question2">質問2: 外向的ですか？内向的ですか？</label>
+                    <select id="question2">
+                        <option value="extrovert">外向的</option>
+                        <option value="introvert">内向的</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question3">質問3: 他人にはない特殊な能力を持ってますか?</label>
+                    <select id="question3">
+                        <option value="yes">はい</option>
+                        <option value="no">いいえ</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question4">質問4: 流行りものについて</label>
+                    <select id="question4">
+                        <option value="like">好き</option>
+                        <option value="dislike">嫌い</option>
+                        <option value="nevermind">興味ない</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question5">質問5: 趣味は人間観察ですか？</label>
+                    <select id="question5">
+                        <option value="yes">はい</option>
+                        <option value="no">いいえ</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question6">質問6: 俺には感情がない？</label>
+                    <select id="question6">
+                        <option value="yes">はい</option>
+                        <option value="no">いいえ</option>
+                    </select>
+                </div>
+                <button type="button" onclick="showResult()">診断する</button>
+            </form>
+        </div>
+        <div id="result-container" class="result-container">
+            <h1>診断結果</h1>
+            <div id="result" class="result"></div>
+            <button type="button" onclick="goBack()">戻る</button>
+        </div>
+    </div>
+    <a class="character">
+        <img src="Judge-sample/images/common/boy.png" alt="中二病">
+    </a>
+    <a class="character2">
+        <img src="Judge-sample/images/common/boy.png" alt="中二病">
+    </a>
+
+    <nav class="floating">
+        <ul>
+            <li><a href="#">トップ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

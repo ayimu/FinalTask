@@ -5,42 +5,37 @@
         <title>任意のタイトル</title>
         <meta name="description" content="ページの概要">
         <meta name="viewport" content="width=device-width">
-        <script src="js/judgeScript.js"></script>
-        <link href="css/judgeStyle.css" rel="stylesheet">
+        <script src="js/apporoprimateJob_checker.js"></script>
+        <link href="css/apporopriateJob_checker.css" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
     </head>
     <body>
         <main class="main">
-            <div class="first-view">
-                <div class="first-view-text">
-                    
-                </div>
-            </div>
             <div class="container">
                 <div id="form-container">
                     <h1>中二病適正診断</h1>
                     <form id="diagnosis-form">
                         <div class="question">
-                            <label for="question1">質問1: 朝型ですか？夜型ですか？</label>
+                            <label for="question1">質問1: HPとMPどっちが大事？</label>
                             <select id="question1">
-                                <option value="morning">朝型</option>
-                                <option value="night">夜型</option>
+                                <option value="HP">HP</option>
+                                <option value="MP">MP</option>
                             </select>
                         </div>
                         <div class="question">
-                            <label for="question2">質問2: 外向的ですか？内向的ですか？</label>
+                            <label for="question2">質問2: 攻撃力と防御力どっちが大事？？</label>
                             <select id="question2">
-                                <option value="extrovert">外向的</option>
-                                <option value="introvert">内向的</option>
+                                <option value="attack">攻撃力</option>
+                                <option value="deffence">防御力</option>
                             </select>
                         </div>
                         <button type="button" onclick="showResult()">診断する</button>
                     </form>
                 </div>
                 <div id="result-container" class="result-container">
-                    <h1>診断結果</h1>
+                    <h1>あなたの適正ジョブは</h1>
                     <div id="result" class="result"></div>
                     <button type="button" onclick="goBack()">戻る</button>
                 </div>
@@ -55,7 +50,7 @@
     
         <nav class="floating">
             <ul>
-                <li><a href="#">トップ</a></li>
+                <li><a href="index.html">トップ</a></li>
             </ul>
         </nav>
     </body>

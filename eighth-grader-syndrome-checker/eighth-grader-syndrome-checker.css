@@ -115,14 +115,3 @@ button:hover {
   font-weight: bold;
   color: hsl(0, 0%, 100%);
 }
-
-/*フォーカスが当たった時にボタン要素に適用されるスタイル(ぶっちゃけなくてもいい)*/
-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
-
-/*ボタンがクリックされた状態のスタイル(なくてもいい)*/
-button:active {
-  background-color: #004080;
-}

@@ -130,3 +130,136 @@ https://fonts.google.com/selection/embed
 https://fudousin.com/programming/css-%ef%bd%9c-3-ways-to-apply-load-css-to-html#:~:text=CSS%EF%BD%9CHTML%E3%81%ABCSS%E3%82%92%E9%81%A9%E7%94%A8%EF%BC%88%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%99%EF%BC%89%E3%81%95%E3%81%9B%E3%82%8B3%E3%81%A4%E3%81%AE%E6%96%B9%E6%B3%95%201%20%E5%86%85%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%3Chead%3E%E5%86%85%E3%81%ABCSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95,2%20%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%82%BF%E3%82%B0%E3%81%AB%E7%9B%B4%E6%8E%A5CSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95%203%20%E5%A4%96%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9A%E3%80%8C.css%E3%80%8D%E3%81%AE%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%8C%E3%81%A4%E3%81%84%E3%81%9FCSS%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%80%81%E3%81%9D%E3%82%8C%E3%82%92HTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95
 -->
 
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>説明リンク</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <meta name="description" content="このサイトについて">
+    <style>
+        body {
+            font-family: 'Kaisei Opti', serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+        }
+        p1{
+            color: white;
+            font-size: 24px;
+        }
+        p2{
+            color: white;
+            
+        }
+        
+        /*トップページに戻る手段*/
+        nav.floating {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #000000;
+        }   
+
+        /*キャラ配置1-1*/
+        .character {
+        bottom: -100px; /* 下が初期位置(0px)  */
+        right: 0px; /* 右が初期位置(0px) */
+        position: absolute;
+        }
+        /*キャラ配置1-2*/
+        .character img {
+        width: 200px;
+        height: auto;
+        }
+
+        /*キャラ配置2-1*/
+        .character2 {
+        bottom: -65px; /* 下が初期位置(0px)  */
+        right: 80px; /* 右が初期位置(0px) */
+        position: absolute;
+        }
+        /*キャラ配置2-2*/
+        .character2 img {
+        width: 40px;
+        height: auto;
+        }
+
+        /*キャラ配置3-1*/
+        .character3 {
+        bottom: -100px; /*下が初期位置(0px) */
+        left: 0px; /*左が初期位置(0px)*/
+        position: absolute;
+        }
+
+        /*キャラ配置3-2*/
+        .character3 img {
+        width: 200px;
+        height: auto;
+        }
+
+        /*キャラ配置4-1*/
+        .character4 {
+        bottom: -100px; /*下が初期位置(0px) */
+        left: 275px; /*左が初期位置(0px)*/
+        position: absolute;
+        }
+
+        /*キャラ配置4-2*/
+        .character4 img {
+        width: 200px;
+        height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>このサイトは<br>
+        3つの診断メーカーを楽しんでもらうことを<br>
+        目的としています。</h1>
+        <p1>診断1:中二病適性診断</p1><br>
+        
+        <p2>この診断では、6つの質問に解答してもらうことで<br>
+            普段あなたがどれだけ非現実的な妄想をしているかを診断します。</p2><br><br>
+        
+        <p1>診断2:〇〇診断</p1><br>
+        
+        <p2>説明文(市原)</p2><br><br>
+        
+        <p1>診断3:△△診断</p1><br>
+        
+        <p2>説明文(岡田)</p2><br><br>
+    <nav class="floating">
+        <!--#に移動したいリンクを記述-->
+        <ul>
+            <li><a href="#">トップ</a></li>
+        </ul>
+    </nav>
+    <a class="character">
+        <img src="images/common/fortune-teller.png" alt="占い師">
+    </a>
+    <a class="character2">
+        <img src="images/common/guitar.png" alt="中身">
+    </a>
+    <a class="character3">
+        <img src="images/common/priest.png" alt="神父">
+    </a>
+    <a class="character4">
+        <img src="images/common/baka.png" alt="中二病">
+    </a>
+</body>
+</html>
+
+<!--
+参考サイト
+
+https://saruwakakun.com/html-css/basic/google-fonts　フォント指定
+https://fonts.google.com/selection/embed
+https://fudousin.com/programming/css-%ef%bd%9c-3-ways-to-apply-load-css-to-html#:~:text=CSS%EF%BD%9CHTML%E3%81%ABCSS%E3%82%92%E9%81%A9%E7%94%A8%EF%BC%88%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%99%EF%BC%89%E3%81%95%E3%81%9B%E3%82%8B3%E3%81%A4%E3%81%AE%E6%96%B9%E6%B3%95%201%20%E5%86%85%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%3Chead%3E%E5%86%85%E3%81%ABCSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95,2%20%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%82%BF%E3%82%B0%E3%81%AB%E7%9B%B4%E6%8E%A5CSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95%203%20%E5%A4%96%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9A%E3%80%8C.css%E3%80%8D%E3%81%AE%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%8C%E3%81%A4%E3%81%84%E3%81%9FCSS%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%80%81%E3%81%9D%E3%82%8C%E3%82%92HTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95
+-->
+

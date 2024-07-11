@@ -219,7 +219,7 @@ img {
         left: 0;
         right: 0;
         color: #ffffff;
-        background-color: #736e62;
+        background-color: rgba(115,110,98,0.9);
         padding-top: 30px;
         padding-bottom: 50px;
         display: none;

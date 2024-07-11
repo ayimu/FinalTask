@@ -24,29 +24,6 @@ nav.floating {
     position: relative;
   }
   
-  /*キャラ配置1-1*/
-  .character {
-    bottom: -50px; /* 下が初期位置(0px)  */
-    right: -30px; /* 右が初期位置(0px) */
-    position: absolute;
-  }
-  /*キャラ配置1-2*/
-  .character img {
-    width: 300px;
-    height: auto;
-  }
-  
-  /*キャラ配置2-1*/
-  .character2 {
-    bottom: -50px; /* 下が初期位置(0px)  */
-    left: -30px; /* 右が初期位置(0px) */
-    position: absolute;
-  }
-  /*キャラ配置2-2*/
-  .character2 img {
-    width: 300px;
-    height: auto;
-  }
   
   /*診断メーカーの枠*/
   .container {

@@ -43,13 +43,17 @@ nav.floating {
 }
 
 .flex-container{
-    margin-top: 300px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 200px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
-    font-size: 50px;
+    font-size: 25px;
+    border: 2px solid #000000;/*枠*/
+    background-color: #000000;/*背景色*/
+    padding: 20px;/*余白*/
+    border-radius: 10px;/*角を丸くするプロパティ*/
 }
 
 .lead {

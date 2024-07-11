@@ -32,7 +32,7 @@ nav.floating {
 .first-view-text h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
-    margin-top: 250px;
+    margin-top: 270px;
     font-size: 84px;
     line-height: 72px;
 }
@@ -51,7 +51,9 @@ nav.floating {
     display: flex;
     justify-content: space-between;
     font-size: 50px;
+    text-align: center;
 }
+
 
 .lead {
     max-width: 1200px;

@@ -35,6 +35,8 @@ nav.floating {
     margin-top: 270px;
     font-size: 84px;
     line-height: 72px;
+
+    text-decoration: underline;
 }
 
 .first-view-text p {

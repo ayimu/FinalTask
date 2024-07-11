@@ -13,7 +13,7 @@ nav.floating {
     background-image: url(../images/common/yukari_yuyushiki.png);
     background-size:100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 50px;
     margin: 0;
     padding-bottom: 1px;
     display: flex;
@@ -21,6 +21,23 @@ nav.floating {
     align-items: center;
     height:fit-content;
     position: relative;
+  }
+
+  @media(max-width:1000px){
+    body {
+      font-family: 'Kaisei Opti', serif;
+      background-image: url(../images/common/yukari_yuyushiki.png);
+      background-size:100%;
+      background-repeat: no-repeat;
+      background-position: center 100px;
+      margin: 0;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:fit-content;
+      position: relative;
+    }
   }
   
   

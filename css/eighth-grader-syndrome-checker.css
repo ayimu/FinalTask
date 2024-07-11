@@ -116,7 +116,7 @@ button:hover {
 }
 
 /* スマホ版用のスタイル */
-@media (max-width: 800px) {
+@media (max-width: 860px) {
   body {
     font-family: 'Kaisei Opti', serif;
     background: url('images/common/judgement.jpg') no-repeat center center fixed;

@@ -4,8 +4,7 @@
 nav.floating {
     position: absolute;
     top: 10px;
-    left: 0px;
-    background-color: #d0d0d0;
+    left: 0px;;
   }
   
   /*背景*/
@@ -14,7 +13,7 @@ nav.floating {
     background-image: url(../images/common/yukari_yuyushiki.png);
     background-size:100%;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center 50px;
     margin: 0;
     padding-bottom: 1px;
     display: flex;
@@ -23,30 +22,24 @@ nav.floating {
     height:fit-content;
     position: relative;
   }
+
+  @media(max-width:860px){
+    body {
+      font-family: 'Kaisei Opti', serif;
+      background-image: url(../images/common/yukari_yuyushiki.png);
+      background-size:100%;
+      background-repeat: no-repeat;
+      background-position: center 100px;
+      margin: 0;
+      padding-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height:fit-content;
+      position: relative;
+    }
+  }
   
-  /*キャラ配置1-1*/
-  .character {
-    bottom: -50px; /* 下が初期位置(0px)  */
-    right: -30px; /* 右が初期位置(0px) */
-    position: absolute;
-  }
-  /*キャラ配置1-2*/
-  .character img {
-    width: 300px;
-    height: auto;
-  }
-  
-  /*キャラ配置2-1*/
-  .character2 {
-    bottom: -50px; /* 下が初期位置(0px)  */
-    left: -30px; /* 右が初期位置(0px) */
-    position: absolute;
-  }
-  /*キャラ配置2-2*/
-  .character2 img {
-    width: 300px;
-    height: auto;
-  }
   
   /*診断メーカーの枠*/
   .container {

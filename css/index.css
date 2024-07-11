@@ -120,6 +120,8 @@ img {
     font-family: 'Cherry Bomb One', cursive;
 }
 
+
+
 @media (max-width: 800px) {
     .site-menu ul {
         display: block;
@@ -172,6 +174,11 @@ img {
         padding-top: 50px;;
     }
 
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-logo {
         margin-top: 60px;
     }
@@ -207,8 +214,14 @@ img {
 .footer-logo {
     display: block;
     width: 235px;
-    margin-top: 90px;
+    margin-top: 40px;
 }
+
+/*
+.footer-text{
+    margin-top: 100px;
+}
+*/
 
 .copyright {
     font-size: 14pt;

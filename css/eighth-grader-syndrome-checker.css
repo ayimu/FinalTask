@@ -1,0 +1,128 @@
+/*トップページに戻る手段*/
+nav.floating {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color: #d0d0d0;
+}
+
+/*背景*/
+body {
+  font-family: 'Kaisei Opti', serif;
+  background: url('../images/eights/common/judgement.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+/*キャラ配置1-1*/
+.character {
+  bottom: -50px; /* 下が初期位置(0px)  */
+  right: -30px; /* 右が初期位置(0px) */
+  position: absolute;
+}
+/*キャラ配置1-2*/
+.character img {
+  width: 300px;
+  height: auto;
+}
+
+/*キャラ配置2-1*/
+.character2 {
+  bottom: -50px; /* 下が初期位置(0px)  */
+  left: -30px; /* 右が初期位置(0px) */
+  position: absolute;
+}
+/*キャラ配置2-2*/
+.character2 img {
+  width: 300px;
+  height: auto;
+}
+
+/*診断メーカーの枠*/
+.container {
+  background-color: #000000;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+}
+
+/*タイトル(デフォルトは"診断メーカー")*/
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/*質問どうしの間隔*/
+.question {
+  margin-bottom: 3px;
+}
+
+/*質問文*/
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+/*選択肢*/
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333333;
+  background-color: #f9f9f9;
+}
+
+/*決定ボタン(デフォルトは"診断する")*/
+button {
+  padding: 12px 25px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+/*buttonのカーソル色変化*/
+button:hover {
+  background-color: #0056b3;
+}
+
+/*これがないと、診断結果が最初の画面に表示されてしまう*/
+.result-container {
+  display: none;
+}
+
+/*診断結果(あなたは***です！)*/
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
+/*フォーカスが当たった時にボタン要素に適用されるスタイル(ぶっちゃけなくてもいい)*/
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*ボタンがクリックされた状態のスタイル(なくてもいい)*/
+button:active {
+  background-color: #004080;
+}

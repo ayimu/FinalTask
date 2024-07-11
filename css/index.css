@@ -32,8 +32,10 @@ nav.floating {
 .first-view-text h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    margin-top: 270px;
     font-size: 84px;
     line-height: 72px;
+    text-decoration: underline;
 }
 
 .first-view-text p {
@@ -43,6 +45,7 @@ nav.floating {
 }
 
 .flex-container{
+
     margin-top: 50px;
     margin-left: 20px;
     margin-right: 20px;
@@ -51,10 +54,12 @@ nav.floating {
     justify-content: space-between;
     font-size: 25px;
     border: 2px solid #000000;/*枠*/
-    background-color: #000000;/*背景色*/
+    background-color: rgba(0,0,0,0.5);/*背景色*/
+    
     padding: 20px;/*余白*/
     border-radius: 10px;/*角を丸くするプロパティ*/
 }
+
 
 .lead {
     max-width: 1200px;
@@ -124,7 +129,9 @@ img {
     font-family: 'Cherry Bomb One', cursive;
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 1000px) {
     .site-menu ul {
         display: block;
         text-align: center;
@@ -176,6 +183,17 @@ img {
         padding-top: 50px;;
     }
 
+    .first-view-text h1 {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 42px;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-logo {
         margin-top: 60px;
     }
@@ -211,8 +229,14 @@ img {
 .footer-logo {
     display: block;
     width: 235px;
-    margin-top: 90px;
+    margin-top: 40px;
 }
+
+/*
+.footer-text{
+    margin-top: 100px;
+}
+*/
 
 .copyright {
     font-size: 14pt;

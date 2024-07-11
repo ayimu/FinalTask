@@ -66,8 +66,8 @@ nav.floating {
     position: absolute;
     top: 100px;
     left: 50px;
+    background-color: #ffffff;
     border-radius: 5px;
-    background-color: #d0d0d0;
 }
 
 .first-view {

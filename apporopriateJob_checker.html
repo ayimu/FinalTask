@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>あなたにおススメのジョブは？2つの質問に答えるだけで診断できます！</title>
+        <meta name="description" content="ページの概要">
+        <meta name="viewport" content="width=device-width">
+        <script src="js/apporoprimateJob_checker.js"></script>
+        <link href="css/apporopriateJob_checker.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet">    
+    </head>
+    <body>
+        <main class="main">
+            <div class="container">
+                <div id="form-container">
+                    <h1>適正ジョブ診断</h1>
+                    <form id="diagnosis-form">
+                        <div class="question">
+                            <label for="question1">質問1: HPとMPどっちが大事？</label>
+                            <select id="question1">
+                                <option value="HP">HP</option>
+                                <option value="MP">MP</option>
+                            </select>
+                        </div>
+                        <div class="question">
+                            <label for="question2">質問2: 攻撃力と防御力どっちが大事？？</label>
+                            <select id="question2">
+                                <option value="attack">攻撃力</option>
+                                <option value="deffence">防御力</option>
+                            </select>
+                        </div>
+                        <button type="button" onclick="showResult()">診断する</button>
+                    </form>
+                </div>
+                <div id="result-container" class="result-container">
+                    <h1>あなたの適正ジョブは</h1>
+                    <div id="result" class="result"></div>
+                    <button type="button" onclick="goBack()">戻る</button>
+                </div>
+            </div>
+        </main>
+        <a class="character">
+            <img src="images/common/boy.png" alt="中二病">
+        </a>
+        <a class="character2">
+            <img src="images/common/boy.png" alt="中二病">
+        </a>
+    
+        <nav class="floating">
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+            </ul>
+        </nav>
+    </body>
+</html>

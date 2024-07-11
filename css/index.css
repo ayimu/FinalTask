@@ -3,6 +3,8 @@ nav.floating {
     top: 100px;
     left: 50px;
     color: #ffffff;
+    background-color: #000000;
+    border-radius: 10px;
 }
 
 .first-view {

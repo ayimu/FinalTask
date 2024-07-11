@@ -9,7 +9,8 @@ nav.floating {
 /*背景*/
 body {
   font-family: 'Kaisei Opti', serif;
-  background-image: url(../images/index/bg_judgement.jpg) no-repeat center center fixed;
+  background-image: url(../images/common/judgement.jpg) no-repeat center center fixed;
+
   background-size: cover;
   margin: 0;
   padding: 0;

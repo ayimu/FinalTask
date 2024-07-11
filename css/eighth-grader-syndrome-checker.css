@@ -115,13 +115,44 @@ button:hover {
   color: hsl(0, 0%, 100%);
 }
 
-/*フォーカスが当たった時にボタン要素に適用されるスタイル(ぶっちゃけなくてもいい)*/
-button:focus {
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-}
+/* スマホ版用のスタイル */
+@media (max-width: 800px) {
+  body {
+    font-family: 'Kaisei Opti', serif;
+    background: url('images/common/judgement.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /*キャラ配置1-1*/
+  .character {
+    bottom: -40px; /* 下が初期位置(0px)  */
+    right: 0px; /* 右が初期位置(0px) */
+    position: absolute;
+  }
 
-/*ボタンがクリックされた状態のスタイル(なくてもいい)*/
-button:active {
-  background-color: #004080;
+  /*キャラ配置2-1*/
+  .character2 {
+    bottom: -40px; /* 下が初期位置(0px)  */
+    left: 0px; /* 右が初期位置(0px) */
+    position: absolute;
+  }
+
+  .character img, .character2 img {
+    width: 100px;
+    height: auto;
+  }
+
 }

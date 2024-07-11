@@ -1,0 +1,133 @@
+body {
+  font-family: 'M PLUS Rounded 1c', 'RocknRoll One', sans-serif;
+  background: url('../images/common/backimage.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+h1 {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  color: #423491;
+}
+
+label, select, button {
+  font-family: 'RocknRoll One', sans-serif;
+}
+
+nav.floating {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  font-size: 1em;
+}
+
+.character, .character2 {
+  position: absolute;
+  bottom: 0;
+}
+
+.character img, .character2 img {
+  width: 200px;
+  height: auto;
+}
+
+.character {
+  right: 30px;
+}
+
+.character2 {
+  left: 30px;
+}
+
+.container {
+  border: 5px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.question {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #d0cece;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #333;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #dcd7d7;
+}
+
+.result-container {
+  display: none;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #423491;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #aba8a8;
+}
+
+button:active {
+  background-color: #aba8a8;
+}
+
+@media screen and (max-width: 860px) {
+  .character, .character2 {
+    display: none;
+  }
+  
+  nav.floating {
+    font-size: 0.8em;
+  }
+  
+  button {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}

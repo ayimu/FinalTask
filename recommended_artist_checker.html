@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>診断メーカー</title>
+    <script src="js/recommended_artist_checker.js"></script>
+    <link href="css/recommended_artist_checker.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=RocknRoll+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <h1>今のあなたにおすすめ日本人アーティスト診断</h1>
+            <form id="diagnosis-form">
+                <div class="question">
+                    <label for="question1">質問1: 作業中に曲を聴きたいですか？</label>
+                    <select id="question1">
+                        <option value="yes">はい</option>
+                        <option value="no">いいえ</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question2">質問2: 男性アーティストと女性アーティストどちらを聴きたい？</label>
+                    <select id="question2">
+                        <option value="men">男性アーティスト</option>
+                        <option value="women">女性アーティスト</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question3">質問3: どちらの声のアーティストを聴きたい？</label>
+                    <select id="question3">
+                        <option value="strong">力強い</option>
+                        <option value="gentle">優しい</option>
+                    </select>
+                </div>
+                <div class="question">
+                    <label for="question4">質問4: 激しい曲，落ち着いた曲のどちらを聴きたい？</label>
+                    <select id="question4">
+                        <option value="intense">激しい曲</option>
+                        <option value="calm">落ち着いた曲</option>
+                    </select>
+                </div>
+                <button type="button" onclick="showResult()">診断する</button>
+            </form>
+        </div>
+        <div id="result-container" class="result-container">
+            <h1>診断結果</h1>
+            <div id="result" class="result"></div>
+            <button type="button" onclick="goBack()">戻る</button>
+        </div>
+    </div>
+    <a class="character">
+        <img src="images/common/listeningwomen.png" alt="ノリノリ女">
+    </a>
+    <a class="character2">
+        <img src="images/common/listeningmen.png" alt="ノリノリ男">
+    </a>
+
+    <nav class="floating">
+        <ul>
+            <li><a href="#">トップ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,92 +1,4 @@
-<!--このコードは、サンプル用です-->
-<!--
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>診断メーカー</title>
-    <script src="script.js"></script>
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="container">
-        <div id="form-container">
-            <h1>中二病適正診断</h1>
-            <form id="diagnosis-form">
-                <div class="question">
-                    <label for="question1">質問1: 朝型ですか？夜型ですか？</label>
-                    <select id="question1">
-                        <option value="morning">朝型</option>
-                        <option value="night">夜型</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="question2">質問2: 外向的ですか？内向的ですか？</label>
-                    <select id="question2">
-                        <option value="extrovert">外向的</option>
-                        <option value="introvert">内向的</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="question3">質問3: 他人にはない特殊な能力を持ってますか?</label>
-                    <select id="question3">
-                        <option value="yes">はい</option>
-                        <option value="no">いいえ</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="question4">質問4: 流行りものについて</label>
-                    <select id="question4">
-                        <option value="like">好き</option>
-                        <option value="dislike">嫌い</option>
-                        <option value="nevermind">興味ない</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="question5">質問5: 趣味は人間観察ですか？</label>
-                    <select id="question5">
-                        <option value="yes">はい</option>
-                        <option value="no">いいえ</option>
-                    </select>
-                </div>
-                <div class="question">
-                    <label for="question6">質問6: 俺には感情がない？</label>
-                    <select id="question6">
-                        <option value="yes">はい</option>
-                        <option value="no">いいえ</option>
-                    </select>
-                </div>
-                <button type="button" onclick="showResult()">診断する</button>
-            </form>
-        </div>
-        <div id="result-container" class="result-container">
-            <h1>診断結果</h1>
-            <div id="result" class="result"></div>
-            <button type="button" onclick="goBack()">戻る</button>
-        </div>
-    </div>
-    <a class="character">
-        <img src="images/common/boy.png" alt="中二病">
-    </a>
-    <a class="character2">
-        <img src="images/common/boy.png" alt="中二病">
-    </a>
-
-    <nav class="floating">
-        <ul>
-            <li><a href="#">トップ</a></li>
-        </ul>
-    </nav>
-    
-</body>
-</html>
--->
-
-<!doctype html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
@@ -116,7 +28,7 @@
         /*トップページに戻る手段*/
         nav.floating {
         position: absolute;
-        top: -50px;
+        top: 0px;
         left: 0px;
         background-color: #000000;
         }   
@@ -182,10 +94,9 @@
         <p2>この診断では、6つの質問に解答してもらうことで<br>
             普段あなたがどれだけ非現実的な妄想をしているかを診断します。</p2><br><br>
         
-        <p1>診断2:適正ジョブ診断</p1><br>
+        <p1>診断2:〇〇診断</p1><br>
         
-        <p2>二つの質問から，あなたにピッタリのジョブをお勧めします。<br>
-            RPGでジョブ選びに困った時などにぜひどうぞ。</p2><br><br>
+        <p2>説明文(市原)</p2><br><br>
         
         <p1>診断3:△△診断</p1><br>
         
@@ -197,16 +108,149 @@
         </ul>
     </nav>
     <a class="character">
-        <img src="images/explain/common/fortune-teller.png" alt="占い師">
+        <img src="images/common/fortune-teller.png" alt="占い師">
     </a>
     <a class="character2">
-        <img src="images/explain/common/guitar.png" alt="中身">
+        <img src="images/common/guitar.png" alt="中身">
     </a>
     <a class="character3">
-        <img src="images/explain/common/priest.png" alt="神父">
+        <img src="images/common/priest.png" alt="神父">
     </a>
     <a class="character4">
-        <img src="images/explain/common/baka.png" alt="中二病">
+        <img src="images/common/baka.png" alt="中二病">
+    </a>
+</body>
+</html>
+
+<!--
+参考サイト
+
+https://saruwakakun.com/html-css/basic/google-fonts　フォント指定
+https://fonts.google.com/selection/embed
+https://fudousin.com/programming/css-%ef%bd%9c-3-ways-to-apply-load-css-to-html#:~:text=CSS%EF%BD%9CHTML%E3%81%ABCSS%E3%82%92%E9%81%A9%E7%94%A8%EF%BC%88%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%99%EF%BC%89%E3%81%95%E3%81%9B%E3%82%8B3%E3%81%A4%E3%81%AE%E6%96%B9%E6%B3%95%201%20%E5%86%85%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%3Chead%3E%E5%86%85%E3%81%ABCSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95,2%20%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9AHTML%E3%82%BF%E3%82%B0%E3%81%AB%E7%9B%B4%E6%8E%A5CSS%E3%82%92%E6%9B%B8%E3%81%8D%E8%BE%BC%E3%82%80%E6%96%B9%E6%B3%95%203%20%E5%A4%96%E9%83%A8%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%82%B7%E3%83%BC%E3%83%88%EF%BC%9A%E3%80%8C.css%E3%80%8D%E3%81%AE%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%8C%E3%81%A4%E3%81%84%E3%81%9FCSS%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%80%81%E3%81%9D%E3%82%8C%E3%82%92HTML%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BE%E3%81%9B%E3%82%8B%E6%96%B9%E6%B3%95
+-->
+
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>説明リンク</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+    <meta name="description" content="このサイトについて">
+    <style>
+        body {
+            font-family: 'Kaisei Opti', serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: white;
+        }
+        p1{
+            color: white;
+            font-size: 24px;
+        }
+        p2{
+            color: white;
+            
+        }
+        
+        /*トップページに戻る手段*/
+        nav.floating {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: #000000;
+        }   
+
+        /*キャラ配置1-1*/
+        .character {
+        bottom: -100px; /* 下が初期位置(0px)  */
+        right: 0px; /* 右が初期位置(0px) */
+        position: absolute;
+        }
+        /*キャラ配置1-2*/
+        .character img {
+        width: 200px;
+        height: auto;
+        }
+
+        /*キャラ配置2-1*/
+        .character2 {
+        bottom: -65px; /* 下が初期位置(0px)  */
+        right: 80px; /* 右が初期位置(0px) */
+        position: absolute;
+        }
+        /*キャラ配置2-2*/
+        .character2 img {
+        width: 40px;
+        height: auto;
+        }
+
+        /*キャラ配置3-1*/
+        .character3 {
+        bottom: -100px; /*下が初期位置(0px) */
+        left: 0px; /*左が初期位置(0px)*/
+        position: absolute;
+        }
+
+        /*キャラ配置3-2*/
+        .character3 img {
+        width: 200px;
+        height: auto;
+        }
+
+        /*キャラ配置4-1*/
+        .character4 {
+        bottom: -100px; /*下が初期位置(0px) */
+        left: 275px; /*左が初期位置(0px)*/
+        position: absolute;
+        }
+
+        /*キャラ配置4-2*/
+        .character4 img {
+        width: 200px;
+        height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>このサイトは<br>
+        3つの診断メーカーを楽しんでもらうことを<br>
+        目的としています。</h1>
+        <p1>診断1:中二病適性診断</p1><br>
+        
+        <p2>この診断では、6つの質問に解答してもらうことで<br>
+            普段あなたがどれだけ非現実的な妄想をしているかを診断します。</p2><br><br>
+        
+        <p1>診断2:〇〇診断</p1><br>
+        
+        <p2>説明文(市原)</p2><br><br>
+        
+        <p1>診断3:△△診断</p1><br>
+        
+        <p2>説明文(岡田)</p2><br><br>
+    <nav class="floating">
+        <!--#に移動したいリンクを記述-->
+        <ul>
+            <li><a href="#">トップ</a></li>
+        </ul>
+    </nav>
+    <a class="character">
+        <img src="images/common/fortune-teller.png" alt="占い師">
+    </a>
+    <a class="character2">
+        <img src="images/common/guitar.png" alt="中身">
+    </a>
+    <a class="character3">
+        <img src="images/common/priest.png" alt="神父">
+    </a>
+    <a class="character4">
+        <img src="images/common/baka.png" alt="中二病">
     </a>
 </body>
 </html>

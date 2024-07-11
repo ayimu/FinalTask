@@ -32,6 +32,7 @@ nav.floating {
 .first-view-text h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
+    margin-top: 250px;
     font-size: 84px;
     line-height: 72px;
 }
@@ -43,7 +44,7 @@ nav.floating {
 }
 
 .flex-container{
-    margin-top: 300px;
+    margin-top: 200px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 200px;
@@ -120,7 +121,9 @@ img {
     font-family: 'Cherry Bomb One', cursive;
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 1000px) {
     .site-menu ul {
         display: block;
         text-align: center;
@@ -172,6 +175,17 @@ img {
         padding-top: 50px;;
     }
 
+    .first-view-text h1 {
+        text-align: center;
+        margin-top: 10%;
+        font-size: 42px;
+    }
+
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+    }
+
     .footer-logo {
         margin-top: 60px;
     }
@@ -207,8 +221,14 @@ img {
 .footer-logo {
     display: block;
     width: 235px;
-    margin-top: 90px;
+    margin-top: 40px;
 }
+
+/*
+.footer-text{
+    margin-top: 100px;
+}
+*/
 
 .copyright {
     font-size: 14pt;

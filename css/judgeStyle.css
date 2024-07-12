@@ -118,19 +118,6 @@ button:hover {
 
 /* スマホ版用のスタイル */
 @media (max-width: 860px) {
-  body {
-    font-family: 'Kaisei Opti', serif;
-    background: url('../images/common/judgement.jpg') no-repeat center center fixed;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
-  }
-  
   .container {
     width: 90%;
     margin: 0 auto;

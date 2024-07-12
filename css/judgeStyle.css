@@ -111,7 +111,7 @@ button:hover {
 @media (max-width: 800px) {
   body {
     font-family: 'Kaisei Opti', serif;
-    background: url('../images/eights/common/judgement.jpg') no-repeat center center fixed;
+    /*background: url('../images/eights/common/judgement.jpg') no-repeat center center fixed;*/
     background-size: cover;
     margin: 0;
     padding: 0;

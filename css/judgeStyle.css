@@ -3,6 +3,7 @@ nav.floating {
   position: absolute;
   top: 10px;
   left: 0px;
+  background-color: #d0d0d0;
 }
 
 /*背景*/
@@ -107,11 +108,19 @@ button:hover {
   display: none;
 }
 
+/*診断結果(あなたは***です！)*/
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+}
+
 /* スマホ版用のスタイル */
 @media (max-width: 860px) {
   body {
     font-family: 'Kaisei Opti', serif;
-    /*background: url('../images/eights/common/judgement.jpg') no-repeat center center fixed;*/
+    background: url('images/eights/common/judgement.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
